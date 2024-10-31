@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		753D2ED22CD3DA4D00A44E70 /* libNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		75AF5F3E2CD3E7B000B4D49F /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
+		75AF5F632CD3EC4C00B4D49F /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		753D2EC92CD3DA4D00A44E70 = {
 			isa = PBXGroup;
 			children = (
-				75AF5F3E2CD3E7B000B4D49F /* config.xcconfig */,
+				75AF5F632CD3EC4C00B4D49F /* config.xcconfig */,
 				753D2ED42CD3DA4D00A44E70 /* Networking */,
 				753D2ED32CD3DA4D00A44E70 /* Products */,
 			);
