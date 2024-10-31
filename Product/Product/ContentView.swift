@@ -12,6 +12,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(Networking.version())
+            
+            #if UAT
+            Text("UAT")
+            #else
+            Text("PROD")
+            #endif
         }
         .padding()
     }

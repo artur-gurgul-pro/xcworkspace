@@ -131,6 +131,7 @@
 /* Begin XCBuildConfiguration section */
 		753D2ED72CD3DA4D00A44E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AF5F632CD3EC4C00B4D49F /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -194,6 +195,7 @@
 		};
 		753D2ED82CD3DA4D00A44E70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AF5F632CD3EC4C00B4D49F /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -256,6 +258,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited) $(BENV)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

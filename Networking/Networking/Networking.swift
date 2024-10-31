@@ -8,7 +8,7 @@
 public class Networking {
     public static func version() -> String {
         #if UAT
-            "Networking v1.0.0 - TST"
+            "Networking v1.0.0 - UAT"
         #else
             "Networking v1.0.1"
         #endif

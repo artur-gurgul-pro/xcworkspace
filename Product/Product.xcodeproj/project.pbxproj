@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		753D2F0E2CD3DDA500A44E70 /* libNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 753D2F0D2CD3DDA500A44E70 /* libNetworking.a */; };
-		753D2F1F2CD3E0BE00A44E70 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */; };
-		753D2F202CD3E0BE00A44E70 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753D2F202CD3E0BE00A44E70 /* config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +181,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753D2F1F2CD3E0BE00A44E70 /* config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +206,7 @@
 /* Begin XCBuildConfiguration section */
 		753D2E832CD3D86B00A44E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -273,6 +270,7 @@
 		};
 		753D2E842CD3D86B00A44E70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -349,6 +347,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pro.gurgul.Product;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(BENV) DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,6 +376,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pro.gurgul.Product;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(BENV)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

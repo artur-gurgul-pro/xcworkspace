@@ -9,5 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 
-BENVH="test"
-ENVH="test2"
+BENV="UAT"
