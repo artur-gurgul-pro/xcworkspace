@@ -6,13 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		753D2F0E2CD3DDA500A44E70 /* libNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 753D2F0D2CD3DDA500A44E70 /* libNetworking.a */; };
+		753D2F1F2CD3E0BE00A44E70 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */; };
+		753D2F202CD3E0BE00A44E70 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		753D2E772CD3D86A00A44E70 /* Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Product.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		753D2EEE2CD3DC6B00A44E70 /* Product-UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product-UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		753D2F0D2CD3DDA500A44E70 /* libNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		753D2EEF2CD3DC6C00A44E70 /* Exceptions for "Product" folder in "Product-UAT" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				ContentView.swift,
+				"Preview Content/Preview Assets.xcassets",
+				ProductApp.swift,
+			);
+			target = 753D2EE72CD3DC6B00A44E70 /* Product-UAT */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		753D2E792CD3D86A00A44E70 /* Product */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				753D2EEF2CD3DC6C00A44E70 /* Exceptions for "Product" folder in "Product-UAT" target */,
+			);
 			path = Product;
 			sourceTree = "<group>";
 		};
@@ -20,6 +45,14 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		753D2E742CD3D86A00A44E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753D2F0E2CD3DDA500A44E70 /* libNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753D2EE92CD3DC6B00A44E70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +65,9 @@
 		753D2E6E2CD3D86A00A44E70 = {
 			isa = PBXGroup;
 			children = (
+				753D2F1E2CD3E0BE00A44E70 /* config.xcconfig */,
 				753D2E792CD3D86A00A44E70 /* Product */,
+				753D2F0C2CD3DDA500A44E70 /* Frameworks */,
 				753D2E782CD3D86A00A44E70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +76,17 @@
 			isa = PBXGroup;
 			children = (
 				753D2E772CD3D86A00A44E70 /* Product.app */,
+				753D2EEE2CD3DC6B00A44E70 /* Product-UAT.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		753D2F0C2CD3DDA500A44E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753D2F0D2CD3DDA500A44E70 /* libNetworking.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +112,28 @@
 			);
 			productName = Product;
 			productReference = 753D2E772CD3D86A00A44E70 /* Product.app */;
+			productType = "com.apple.product-type.application";
+		};
+		753D2EE72CD3DC6B00A44E70 /* Product-UAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753D2EEB2CD3DC6B00A44E70 /* Build configuration list for PBXNativeTarget "Product-UAT" */;
+			buildPhases = (
+				753D2EE82CD3DC6B00A44E70 /* Sources */,
+				753D2EE92CD3DC6B00A44E70 /* Frameworks */,
+				753D2EEA2CD3DC6B00A44E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				753D2E792CD3D86A00A44E70 /* Product */,
+			);
+			name = "Product-UAT";
+			packageProductDependencies = (
+			);
+			productName = Product;
+			productReference = 753D2EEE2CD3DC6B00A44E70 /* Product-UAT.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +166,7 @@
 			projectRoot = "";
 			targets = (
 				753D2E762CD3D86A00A44E70 /* Product */,
+				753D2EE72CD3DC6B00A44E70 /* Product-UAT */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +176,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753D2F202CD3E0BE00A44E70 /* config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753D2EEA2CD3DC6B00A44E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753D2F1F2CD3E0BE00A44E70 /* config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +192,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		753D2E732CD3D86A00A44E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753D2EE82CD3DC6B00A44E70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,6 +383,64 @@
 			};
 			name = Release;
 		};
+		753D2EEC2CD3DC6B00A44E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Product/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENV = UAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.gurgul.Product;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		753D2EED2CD3DC6B00A44E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Product/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENV = UAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.gurgul.Product;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +458,15 @@
 			buildConfigurations = (
 				753D2E862CD3D86B00A44E70 /* Debug */,
 				753D2E872CD3D86B00A44E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753D2EEB2CD3DC6B00A44E70 /* Build configuration list for PBXNativeTarget "Product-UAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753D2EEC2CD3DC6B00A44E70 /* Debug */,
+				753D2EED2CD3DC6B00A44E70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
