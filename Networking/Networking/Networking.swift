@@ -10,7 +10,7 @@ public class Networking {
         #if UAT
             "Networking v1.0.0 - UAT"
         #else
-            "Networking v1.0.1"
+            "Networking v1.0.1 - PROD"
         #endif
     }
 }
