@@ -1,12 +1,2 @@
-//
-//  config.xcconfig
-//  Product
-//
-//  Created by Artur Gurgul on 31/10/2024.
-//
 
-// Configuration settings file format documentation can be found at:
-// https://help.apple.com/xcode/#/dev745c5c974
-
-
-BENV="UAT111"
+BENV=PROD
