@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		753D2ED22CD3DA4D00A44E70 /* libNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7589C84B2CD530930076940F /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +45,7 @@
 		753D2EC92CD3DA4D00A44E70 = {
 			isa = PBXGroup;
 			children = (
+				7589C84B2CD530930076940F /* config.xcconfig */,
 				753D2ED42CD3DA4D00A44E70 /* Networking */,
 				753D2ED32CD3DA4D00A44E70 /* Products */,
 			);
@@ -249,6 +251,7 @@
 		};
 		753D2EDA2CD3DA4D00A44E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7589C84B2CD530930076940F /* config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -262,6 +265,7 @@
 		};
 		753D2EDB2CD3DA4D00A44E70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7589C84B2CD530930076940F /* config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";

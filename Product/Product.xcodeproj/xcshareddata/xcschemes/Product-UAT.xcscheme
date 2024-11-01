@@ -6,6 +6,24 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "CONFIG_PATH=&quot;$PROJECT_DIR/../Networking/config.xcconfig&quot;&#10;&#10;if [ -f &quot;$CONFIG_PATH&quot; ] ; then&#10;    rm &quot;$CONFIG_PATH&quot;&#10;fi&#10;&#10;ln &quot;$PROJECT_DIR/Envs/uat.xcconfig&quot; &quot;$CONFIG_PATH&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "75AF5F872CD4E69E00B4D49F"
+                     BuildableName = "Product-UAT.app"
+                     BlueprintName = "Product-UAT"
+                     ReferencedContainer = "container:Product.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
