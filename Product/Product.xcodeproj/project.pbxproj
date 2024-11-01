@@ -11,7 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		753D2E772CD3D86A00A44E70 /* Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Product.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		753D2E772CD3D86A00A44E70 /* Product-PROD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product-PROD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753D2F0D2CD3DDA500A44E70 /* libNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		753D2F1E2CD3E0BE00A44E70 /* prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prod.xcconfig; sourceTree = "<group>"; };
 		75AF5F792CD3F1C200B4D49F /* uat.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = uat.xcconfig; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		753D2E782CD3D86A00A44E70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				753D2E772CD3D86A00A44E70 /* Product.app */,
+				753D2E772CD3D86A00A44E70 /* Product-PROD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,10 +75,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		753D2E762CD3D86A00A44E70 /* Product */ = {
+		753D2E762CD3D86A00A44E70 /* Product-PROD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 753D2E852CD3D86B00A44E70 /* Build configuration list for PBXNativeTarget "Product" */;
+			buildConfigurationList = 753D2E852CD3D86B00A44E70 /* Build configuration list for PBXNativeTarget "Product-PROD" */;
 			buildPhases = (
+				75AF5F7D2CD3F52400B4D49F /* ShellScript */,
 				753D2E732CD3D86A00A44E70 /* Sources */,
 				753D2E742CD3D86A00A44E70 /* Frameworks */,
 				753D2E752CD3D86A00A44E70 /* Resources */,
@@ -90,11 +91,11 @@
 			fileSystemSynchronizedGroups = (
 				753D2E792CD3D86A00A44E70 /* Product */,
 			);
-			name = Product;
+			name = "Product-PROD";
 			packageProductDependencies = (
 			);
 			productName = Product;
-			productReference = 753D2E772CD3D86A00A44E70 /* Product.app */;
+			productReference = 753D2E772CD3D86A00A44E70 /* Product-PROD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				753D2E762CD3D86A00A44E70 /* Product */,
+				753D2E762CD3D86A00A44E70 /* Product-PROD */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +141,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75AF5F7D2CD3F52400B4D49F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		753D2E732CD3D86A00A44E70 /* Sources */ = {
@@ -343,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		753D2E852CD3D86B00A44E70 /* Build configuration list for PBXNativeTarget "Product" */ = {
+		753D2E852CD3D86B00A44E70 /* Build configuration list for PBXNativeTarget "Product-PROD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				753D2E862CD3D86B00A44E70 /* Debug */,
