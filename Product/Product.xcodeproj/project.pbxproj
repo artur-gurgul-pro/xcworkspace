@@ -19,25 +19,9 @@
 		75AF5F902CD4E69E00B4D49F /* Product-UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product-UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		75AF5F912CD4E69E00B4D49F /* Exceptions for "Product" folder in "Product-UAT" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-				ContentView.swift,
-				"Preview Content/Preview Assets.xcassets",
-				ProductApp.swift,
-			);
-			target = 75AF5F872CD4E69E00B4D49F /* Product-UAT */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		753D2E792CD3D86A00A44E70 /* Product */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				75AF5F912CD4E69E00B4D49F /* Exceptions for "Product" folder in "Product-UAT" target */,
-			);
 			path = Product;
 			sourceTree = "<group>";
 		};
@@ -216,7 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 		75AF5F882CD4E69E00B4D49F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
